@@ -65,12 +65,12 @@ html
 Copy
 Edit
 <script src="https://unpkg.com/docx@7.5.0/build/index.js"></script>
-🌐 Live Demo
-🔗 Click here to try it online
-(Optional: Host via GitHub Pages or Netlify)
+
 
 📸 Screenshots
-Add screenshots or GIFs to showcase login, writing, and export functionality.
+![image](https://github.com/user-attachments/assets/46d32f09-e8d3-4420-b931-93a9fcbac695)
+![image](https://github.com/user-attachments/assets/41816a6b-dca4-4114-a8eb-36c005f03a35)
+
 
 🙌 Acknowledgements
 docx.js - for DOCX generation
