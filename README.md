@@ -1,6 +1,5 @@
 # 📝 NoteEdge - Your Private Space in the Digital Cosmos
 
-![NoteEdge Banner](https://via.placeholder.com/1000x300?text=NoteEdge+Digital+Diary) <!-- Optional: Replace with a real banner if available -->
 
 > A sleek, modern, and private digital diary built with HTML, CSS, and JavaScript, powered by localStorage and enhanced with custom animations.
 
