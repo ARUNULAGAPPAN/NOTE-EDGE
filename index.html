@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NoteEdge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- PAGE HEADER -->
+  <div class="glassy-header">
+    <h1 class="project-title">NOTE EDGE</h1>
+    <p class="project-subtitle">Your Private Space in the Digital Cosmos</p>
+  </div>
+
+  <!-- LOGIN PAGE -->
+  <div id="loginPage">
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="text" id="id" placeholder="Enter your ID">
+    <button onclick="login()">Enter</button>
+  </div>
+
+  <!-- DIARY PAGE (Initially hidden) -->
+  <div id="diaryPage" style="display:none;">
+    <h2 id="pageNumber">Page: 1</h2>
+    <textarea id="diaryContent" placeholder="Start writing..."></textarea>
+    <div id="saveStatus">Saved!</div>
+    <div class="diary-footer">
+      <div class="left-buttons">
+        <button onclick="prevPage()">⬅ Prev</button>
+        <button onclick="newPage()">➕ New</button>
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+      <div class="right-buttons">
+        <button onclick="savePage()">💾 Save</button>
+        <button onclick="downloadDiary()">📄 Export</button>
+        <button onclick="logout()">🚪 Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR ELEMENT -->
+  <div class="custom-cursor"></div>
+
+  <!-- JAVASCRIPT LIBRARIES (Load these first) -->
+ <!-- NEW SCRIPT TAG (loading the local file) -->
+
+
+
+  
+  <!-- YOUR CUSTOM SCRIPT (Load this last) -->
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+:root {
+  --neon-blue: #00f0ff;
+  --neon-pink: #041cf3;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  background-color: #000000;
+  color: var(--neon-blue);
+  text-align: center;
+  cursor: none; /* Hide default cursor for custom one */
+}
+
+/* --- Layout Sections --- */
+#loginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+#diaryPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glassy-header {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  padding: 20px 0 10px 0;
+  border-bottom: 2px solid rgba(0, 255, 231, 0.2);
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 255, 231, 0.1);
+}
+
+.diary-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 800px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.left-buttons, .right-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* --- Text and Input Elements --- */
+.project-title {
+  font-size: 36px;
+  color: var(--neon-blue);
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+.project-subtitle {
+  font-size: 18px;
+  color: #ccc;
+  margin: 5px 0 0 0;
+  font-weight: bold;
+}
+
+#pageNumber {
+  font-weight: 900;
+  font-size: 22px;
+  border-bottom: 2px solid rgba(0, 255, 231, 0.2);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+input, textarea {
+  margin: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--neon-blue);
+  border-radius: 8px;
+  color: var(--neon-blue);
+  font-size: 18px;
+  font-weight: bold;
+  width: 80%;
+  max-width: 600px;
+  backdrop-filter: blur(4px);
+}
+
+textarea {
+  height: 300px;
+  background-image: repeating-linear-gradient(to bottom, rgba(0, 255, 231, 0.2) 0 1px, transparent 1px 24px);
+  line-height: 24px;
+  resize: none;
+  font-family: 'Courier New', monospace;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 5px;
+  font-size: 16px;
+  border: 2px solid var(--neon-blue);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--neon-blue);
+  border-radius: 12px;
+  cursor: none; /* Let the custom cursor handle it */
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px var(--neon-blue);
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--neon-blue);
+  color: #000;
+  box-shadow: 0 0 20px var(--neon-blue);
+}
+
+/* --- Status and Cursor --- */
+#saveStatus {
+  margin-top: 10px;
+  color: #00ff99;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  border: 1px solid #00ff99;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
+
+#saveStatus.show {
+  opacity: 1;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--neon-pink);
+  border-radius: 50%;
+  background-color: rgba(3, 116, 245, 0.2);
+  box-shadow: 0 0 12px var(--neon-pink);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease-out;
+}
+
+.custom-cursor::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: var(--neon-pink);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--neon-pink);
+  transform: translate(-50%, -50%);
+}
