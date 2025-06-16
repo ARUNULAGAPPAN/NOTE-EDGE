@@ -26,14 +26,8 @@
 ---
 
 ## 📂 Folder Structure
-
-NoteEdge/
-│
-├── index.html # Main HTML file
-├── styles.css # All custom styling
-├── scripts.js # Application logic and interactivity
-├── README.md # Project documentation
-└── /libs # (Optional) Place for docx library if included locally
+![image](https://github.com/user-attachments/assets/c6be4750-49b5-45ef-9c31-2b6a5e1c6c21)
+y
 
 yaml
 Copy
@@ -45,7 +39,7 @@ Edit
 
 1. **Clone this repository**  
    ```bash
-   git clone https://github.com/yourusername/NoteEdge.git
+   git clone https://github.com/ARUNULAGAPPAN/NoteEdge.git
    cd NoteEdge
 Open index.html in any modern browser
 
@@ -79,7 +73,7 @@ Orbitron Font
 Inspiration from neon retro UI styles
 
 📜 License
-This project is open-source and available under the MIT License.
+This project is open-source 
 
 ✍️ Author
 S. Arun Ulagappan
