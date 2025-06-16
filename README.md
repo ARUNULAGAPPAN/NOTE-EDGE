@@ -61,7 +61,8 @@ Edit
 
 
 📸 Screenshots
-![image](https://github.com/user-attachments/assets/46d32f09-e8d3-4420-b931-93a9fcbac695)
+![image](https://github.com/user-attachments/assets/f2429601-8fdf-44d1-8fe5-1e352198b954)
+
 ![image](https://github.com/user-attachments/assets/41816a6b-dca4-4114-a8eb-36c005f03a35)
 
 
